@@ -1,0 +1,7 @@
+<nav>
+  {% for navigation in site.data.navigation %}
+    <a href="{{ navigation.link }}" {% if page.url == navigation.link %}class="current"{% endif %}>
+      {{ navigation.name }}
+    </a>
+  {% endfor %}
+</nav>
